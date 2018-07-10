@@ -16,6 +16,7 @@ export class Card extends React.Component {
                 </div>
                 <div className="dashboard-protected-data">
                     Protected data: {this.props.protectedData}
+
                 </div>
             </div>
         );
@@ -27,7 +28,7 @@ const mapStateToProps = state => {
     return {
         username: state.auth.currentUser.username,
         name: `${currentUser.firstName} ${currentUser.lastName}`,
-        protectedData: state.protectedData.data
+        protectedData: state.protectedData.data,
     };
 };
 
