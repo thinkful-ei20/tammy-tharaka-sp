@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import {fetchProtectedData} from '../actions/protected-data';
-import {getUserQuestions} from '../actions/questions';
+import {getQuestions} from '../actions/questions';
 
 export class Dashboard extends React.Component {
     componentDidMount() {
@@ -17,6 +17,7 @@ export class Dashboard extends React.Component {
                 </div>
                 <div className="dashboard-questions">
                     Who is this historical figure?
+                    {this.props.questions.img}
                     
                 </div>
             </div>
@@ -30,6 +31,7 @@ const mapStateToProps = state => {
         username: state.auth.currentUser.username,
         name: `${currentUser.firstName} ${currentUser.lastName}`,
         protectedData: state.protectedData.data,
+        questions: state.questions
     };
 };
 

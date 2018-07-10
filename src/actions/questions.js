@@ -4,13 +4,13 @@ import {API_BASE_URL} from '../config';
 import {normalizeResponseErrors} from './utils';
 
 export const SET_USER_QUESTIONS = 'SET_USER_QUESTIONS';
-export const setUserQuestions = userQuestions => ({
+export const setQuestions = userQuestions => ({
     type: SET_USER_QUESTIONS,
     userQuestions
 });
 
 //GET USER QUESTIONS
-export const getUserQuestions = (event) => (dispatch, getState) => {
+export const getQuestions = (event) => (dispatch, getState) => {
     const authToken = getState().auth.authToken;
     return fetch(`${API_BASE_URL}/questions`, {
         method: 'GET',
@@ -21,7 +21,7 @@ export const getUserQuestions = (event) => (dispatch, getState) => {
     })
         .then(res => normalizeResponseErrors(res))
         .then(res => res.json())
-        .then(qauestions => dispatch(setUserQuestions(qauestions)))
+        .then(qauestions => dispatch(setQuestions(qauestions)))
         .catch(err => {
             const {reason, message, location} = err;
             if (reason === 'ValidationError') {

@@ -1,4 +1,4 @@
-import { SET_USER_QUESTIONS } from '../actions/events';
+import { SET_USER_QUESTIONS } from '../actions/questions';
 
 
 const initialState = {
