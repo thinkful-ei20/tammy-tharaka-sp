@@ -21,7 +21,7 @@ export const getUserQuestions = (event) => (dispatch, getState) => {
     })
         .then(res => normalizeResponseErrors(res))
         .then(res => res.json())
-        .then(events => dispatch(setUserQuestions(events)))
+        .then(qauestions => dispatch(setUserQuestions(qauestions)))
         .catch(err => {
             const {reason, message, location} = err;
             if (reason === 'ValidationError') {
