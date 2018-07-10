@@ -12,7 +12,7 @@ export const setUserQuestions = userQuestions => ({
 //GET USER QUESTIONS
 export const getUserQuestions = (event) => (dispatch, getState) => {
     const authToken = getState().auth.authToken;
-    return fetch(`${API_BASE_URL}/questions/user`, {
+    return fetch(`${API_BASE_URL}/questions`, {
         method: 'GET',
         headers: {
             Authorization: `Bearer ${authToken}`,
