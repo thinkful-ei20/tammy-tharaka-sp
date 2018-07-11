@@ -2,23 +2,24 @@ import React from 'react';
 import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import {fetchProtectedData} from '../actions/protected-data';
-import {getQuestions} from '../actions/questions';
+import {fetchQuestions} from '../actions/questions';
 
 export class Dashboard extends React.Component {
     componentDidMount() {
-        this.props.dispatch(fetchProtectedData());
+        this.props.dispatch(fetchQuestions());
     }
 
     render() {
+        console.log(this.props.questions.data.img)
+
         return (
             <div className="dashboard">
                 <div className="dashboard-username">
                    Welcome {this.props.username}
                 </div>
                 <div className="dashboard-questions">
-                    Who is this historical figure?
-                    {this.props.questions.img}
-                    
+                    Who is this historical figure?<br></br>
+                    <img src={this.props.questions.data.img}/>
                 </div>
             </div>
         );
