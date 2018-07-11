@@ -2,8 +2,9 @@ import React from 'react';
 import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import {fetchProtectedData} from '../actions/protected-data';
-import {fetchQuestions} from '../actions/questions';
+import {fetchQuestions, fetchNext} from '../actions/questions';
 import AnswerForm from './answer-form';
+import './dashboard.css';
 
 export class Dashboard extends React.Component {
     componentDidMount() {
@@ -12,7 +13,7 @@ export class Dashboard extends React.Component {
 
 
     render() {
-        console.log(this.props.questions.data)
+        console.log(this.props)
 
         return (
             <div className="dashboard">
@@ -24,7 +25,7 @@ export class Dashboard extends React.Component {
                     <img src={this.props.questions.data}/>
                 </div>
                 <AnswerForm />
-                <button onClick={() => this.props.dispatch(fetchQuestions())}>Next</button>
+                <button onClick={() => this.props.dispatch(fetchNext())}>Next</button>
             </div>
         );
     }

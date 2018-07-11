@@ -16,6 +16,18 @@ export const fetchQuestionsError = error => ({
   error
 });
 
+export const FETCH_NEXT_SUCCESS = 'FETCH_NEXT_SUCCESS';
+export const fetchNextSuccess = data => ({
+  type: FETCH_NEXT_SUCCESS,
+  data
+});
+
+export const FETCH_NEXT_ERROR = 'FETCH_NEXT_ERROR';
+export const fetchNextError = error => ({
+  type: FETCH_NEXT_ERROR,
+  error
+});
+
 //GET USER QUESTIONS
 export const fetchQuestions = () => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
@@ -34,5 +46,26 @@ export const fetchQuestions = () => (dispatch, getState) => {
     })
     .catch(err => {
       dispatch(fetchQuestionsError(err));
+    });
+};
+
+//GET NEXT QUESTION
+export const fetchNext = () => (dispatch, getState) => {
+  const authToken = getState().auth.authToken;
+
+  return fetch(`${API_BASE_URL}/questions/next`, {
+    method: 'GET',
+    headers: {
+      Authorization: `Bearer ${authToken}`,
+      'content-type': 'application/json'
+    }
+  })
+    .then(res => normalizeResponseErrors(res))
+    .then(res => res.json())
+    .then(data => {
+      dispatch(fetchNextSuccess(data));
+    })
+    .catch(err => {
+      dispatch(fetchNextError(err));
     });
 };
