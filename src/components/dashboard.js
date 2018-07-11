@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import {fetchProtectedData} from '../actions/protected-data';
 import {fetchQuestions} from '../actions/questions';
+import AnswerForm from './answer-form';
 
 export class Dashboard extends React.Component {
     componentDidMount() {
@@ -21,6 +22,7 @@ export class Dashboard extends React.Component {
                     Who is this historical figure?<br></br>
                     <img src={this.props.questions.data.img}/>
                 </div>
+                {/* <AnswerForm /> */}
             </div>
         );
     }
