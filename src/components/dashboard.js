@@ -10,8 +10,9 @@ export class Dashboard extends React.Component {
         this.props.dispatch(fetchQuestions());
     }
 
+
     render() {
-        console.log(this.props.questions.data.img)
+        console.log(this.props.questions.data)
 
         return (
             <div className="dashboard">
@@ -20,9 +21,10 @@ export class Dashboard extends React.Component {
                 </div>
                 <div className="dashboard-questions">
                     Who is this historical figure?<br></br>
-                    <img src={this.props.questions.data.img}/>
+                    <img src={this.props.questions.data}/>
                 </div>
-                {/* <AnswerForm /> */}
+                <AnswerForm />
+                <button onClick={() => this.props.dispatch(fetchQuestions())}>Next</button>
             </div>
         );
     }
