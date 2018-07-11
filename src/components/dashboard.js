@@ -22,7 +22,10 @@ export class Dashboard extends React.Component {
                 </div>
                 <div className="dashboard-questions">
                     Who is this historical figure?<br></br>
-                    <img src={this.props.questions.data}/>
+                    <div className="imgDiv">
+                        <img src={this.props.questions.data}/>
+                    </div>
+                    
                 </div>
                 <AnswerForm />
                 <button onClick={() => this.props.dispatch(fetchNext())}>Next</button>

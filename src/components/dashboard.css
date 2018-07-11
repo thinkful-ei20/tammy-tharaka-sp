@@ -1,0 +1,12 @@
+.imgDiv {
+    height: 200px;
+    width: 200px;
+}
+.imgDiv img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* .dashboard-questions {
+    margin: auto;
+} */
