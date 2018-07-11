@@ -8,7 +8,6 @@ import {
 
   const initialState = {
     data: [],
-    next: [],
     error: null
   };
   
@@ -24,7 +23,7 @@ import {
       });
     } else if (action.type === FETCH_NEXT_SUCCESS) {
       return Object.assign({}, state, {
-        next: action.next,
+        data: action.data,
         error: null
       });
     } else if (action.type === FETCH_NEXT_ERROR) {
