@@ -28,6 +28,7 @@ export class Dashboard extends React.Component {
                     
                 </div>
                 <AnswerForm />
+                <span>Your answer is  {this.props.questions.answer}</span><br></br>
                 <button onClick={() => this.props.dispatch(fetchNext())}>Next</button>
             </div>
         );
@@ -35,12 +36,14 @@ export class Dashboard extends React.Component {
 }
 
 const mapStateToProps = state => {
+    // console.log(state.answer)
     const {currentUser} = state.auth;
     return {
         username: state.auth.currentUser.username,
         name: `${currentUser.firstName} ${currentUser.lastName}`,
         protectedData: state.protectedData.data,
-        questions: state.questions
+        questions: state.questions,
+        // answer: state.questions.answer
     };
 };
 

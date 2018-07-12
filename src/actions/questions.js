@@ -83,7 +83,8 @@ export const fetchNext = () => (dispatch, getState) => {
 };
 
 //PUT USER ANSWERS
-export const answerQuestion = (correctAnswer) => (dispatch, getState) => {
+export const answerQuestion = (answer) => (dispatch, getState) => {
+  // console.log(answer.answer)
   const authToken = getState().auth.authToken;
 
   return fetch(`${API_BASE_URL}/questions`, {
@@ -92,17 +93,17 @@ export const answerQuestion = (correctAnswer) => (dispatch, getState) => {
       Authorization: `Bearer ${authToken}`,
       'content-type': 'application/json'
     },
-    
+
     body: JSON.stringify({
-      correctAnswer
+      correctAnswer: answer.answer
     })
 
   })
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
     .then(data => {
-      dispatch(answerSuccess(data));
-      console.log('MY ANSWER',data);
+      dispatch(answerSuccess(data.message));
+      // console.log('MY ANSWER',data);
     })
     .catch(err => {
       dispatch(answerError(err));

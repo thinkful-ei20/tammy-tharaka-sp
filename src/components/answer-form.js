@@ -6,7 +6,7 @@ import {required, nonEmpty} from '../validators';
 
 export class AnswerForm extends React.Component {
     onSubmit(answer) {
-        this.props.dispatch(answerQuestion(answer));//for now just get fetch the same image
+        this.props.dispatch(answerQuestion(answer));
         this.props.reset();//Clearing input fields
     }
 
@@ -55,6 +55,7 @@ export class AnswerForm extends React.Component {
         );
     }
 }
+
 
 export default reduxForm({
     form: 'post',

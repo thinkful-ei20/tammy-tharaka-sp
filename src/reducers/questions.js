@@ -10,7 +10,7 @@ import {
 
   const initialState = {
     data: [],
-    answer: [],
+    answer: "",
     error: null
   };
   
@@ -27,6 +27,7 @@ import {
     } else if (action.type === FETCH_NEXT_SUCCESS) {
       return Object.assign({}, state, {
         data: action.data,
+        answer: "",
         error: null
       });
     } else if (action.type === FETCH_NEXT_ERROR) {
