@@ -12,9 +12,10 @@ export function RegistrationPage(props) {
     }
     return (
         <div className="home">
-            <h2>Register.</h2>
+            <h2>Register</h2>
             <RegistrationForm />
-            <Link to="/">Login</Link>
+            <Link to="/login">Login</Link><br></br>
+            <Link to="/">LandingPage</Link>
         </div>
     );
 }
