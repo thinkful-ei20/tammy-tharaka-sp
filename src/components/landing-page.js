@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
-
+import './landing-page.css';
 import LoginForm from './login-form';
 
 export function LandingPage(props) {
@@ -12,8 +12,7 @@ export function LandingPage(props) {
 
     return (
         <div className="home">
-            <h2>History</h2>
-            {/* <LoginForm /> */}
+            <h2>Learn to retain information better and get woke</h2>
             <Link to="/login">Login</Link><br></br>
             <Link to="/register">Register</Link>
         </div>
