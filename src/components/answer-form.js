@@ -1,13 +1,12 @@
 import React from 'react';
 import {Field, reduxForm, focus} from 'redux-form';
 import Input from './input';
-import {fetchQuestions} from '../actions/questions';
+import {fetchQuestions, answerQuestion} from '../actions/questions';
 import {required, nonEmpty} from '../validators';
 
 export class AnswerForm extends React.Component {
-    onSubmit(values) {
-        console.log('submit')
-        this.props.dispatch(fetchQuestions());//for now just get fetch the same image
+    onSubmit(answer) {
+        this.props.dispatch(answerQuestion(answer));//for now just get fetch the same image
         this.props.reset();//Clearing input fields
     }
 
@@ -17,7 +16,7 @@ export class AnswerForm extends React.Component {
         if (this.props.submitSucceeded) {
             successMessage = (
                 <div className="message message-success elementToFadeInAndOut">
-                    Message submitted successfully
+                    Answer submitted successfully
                 </div>
             );
         }
@@ -59,5 +58,5 @@ export class AnswerForm extends React.Component {
 
 export default reduxForm({
     form: 'post',
-    onSubmitFail: (errors, dispatch) => dispatch(focus('post', 'title'))
+    onSubmitFail: (errors, dispatch) => dispatch(focus('post', 'answer'))
 })(AnswerForm);
