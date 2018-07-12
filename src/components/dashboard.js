@@ -28,7 +28,7 @@ export class Dashboard extends React.Component {
                     
                 </div>
                 <AnswerForm />
-                <span>Your answer is  {this.props.questions.answer}</span><br></br>
+                <span>{this.props.questions.answer}</span><br></br>
                 <button onClick={() => this.props.dispatch(fetchNext())}>Next</button>
             </div>
         );
