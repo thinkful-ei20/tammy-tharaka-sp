@@ -18,14 +18,14 @@ The purpose is to highlight how outsiders continuously shaped American ideals an
 
 
 # Features
--Users can create an account
--Users can store where they ended their study session
--Users can have a customized order of cards based on how well they answer questions
+- Users can create an account
+- Users can store where they ended their study session
+- Users can have a customized order of cards based on how well they answer questions
 
-## To Come
--Users can keep score of their progress
--Users can post new cards to the deck
--Card descriptions will be added to give more information on each historical figure
+**To Come**
+- Users can keep score of their progress
+- Users can post new cards to the deck
+- Card descriptions will be added to give more information on each historical figure
 
 
 # How to Use
