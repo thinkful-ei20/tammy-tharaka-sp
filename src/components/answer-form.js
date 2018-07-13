@@ -47,7 +47,7 @@ export class AnswerForm extends React.Component {
                         validate={[required, nonEmpty]}
                     />
           
-                    <button role="button" id="answer-button" className="answer-button" disabled={this.props.pristine || this.props.submitting}>
+                    <button id="answer-button" className="answer-button" disabled={this.props.pristine || this.props.submitting}>
                         Submit
                     </button>
                 </form>

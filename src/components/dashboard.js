@@ -26,7 +26,7 @@ export class Dashboard extends React.Component {
                                 Who is this?
                             
                                 <div className="imgDiv">
-                                <img src={this.props.questions.data}/>
+                                <img src={this.props.questions.data} alt="image of a not usually historical figure who shaped American discourse on civil rights"/>
                                 </div>
                             </div>
                         </li>
