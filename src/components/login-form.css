@@ -26,5 +26,5 @@ input:focus{
 }
 
 .form-error {
-	color:rgb(202, 112, 28);
+	color:red;
 }

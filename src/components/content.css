@@ -1,17 +1,22 @@
-.home {
+.main-content-container{
+    align-content: center;
+}
+
+.main-content-container2 {
     border-radius: 15px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 80px;
+    padding-top: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
     width: 600px;
     background: rgba(0, 0, 0, 0.7);
 }
 
 .content-container{
     float: center;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 p{
@@ -19,7 +24,7 @@ p{
 }
 
 h2 {
-    padding: 25px;
+    padding-top: 25px;
     color: white;
     opacity: 1.0;
 }
@@ -31,16 +36,16 @@ a {
 
 a:hover {
     color: cornflowerblue;
-    
+
 }
 
 
 ul .content {
     list-style-type: none;
     display: inline-block;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-right: 30px;
     padding-bottom: 20px;
-    padding-left: 20px;
     overflow: hidden;
 }
 

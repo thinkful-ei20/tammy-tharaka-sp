@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
-import './landing-page.css';
+import './content.css';
 
 
 export function LandingPage(props) {
@@ -11,13 +11,21 @@ export function LandingPage(props) {
     }
 
     return (
-        <div className="home">
-            <div className="content-container">
-            <h2>Learn to retain information better and get woke</h2>
-            <ul className="content">
-                <li className="content"><Link to="/login">Login</Link></li>
-                <li className="content"><Link to="/register">Register</Link></li>
-            </ul>
+        <div className="main-content-container">
+            <div className="main-content-container2">
+                <div className="content-container">
+                    <div className="text-box">
+                    This is stuff you won't find in history books, 
+                    the forgotten struggles and unifiying strength brought to America 
+                    by minorities, immigrants, and their supporters. 
+                    Revisit America's unsung heros through a deck of cards. 
+                    </div>
+                <h2>Get woke.</h2>
+                <ul className="content">
+                    <li className="content"><Link to="/login">Login</Link></li>
+                    <li className="content"><Link to="/register">Register</Link></li>
+                </ul>
+                </div>
             </div>
         </div>
     );

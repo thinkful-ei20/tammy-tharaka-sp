@@ -6,7 +6,7 @@
 
 
 
-html, body, div, span, h2, h3, p, h1,
+html, body, div, span, h3, p, h1,
 img, fieldset, form, label,footer, header,
 menu, nav, section, summary {
 	margin: 0;
@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  text-align: center;
+  align-content: center;
   background-color: #000000;
   background-image: url("background-sr.jpg");
   color: white;
