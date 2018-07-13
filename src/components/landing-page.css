@@ -1,8 +1,53 @@
 .home {
-    padding: 2%;
-    width: 100%;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.content-container{
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    color:white;
 }
 
 h2 {
+    padding: 25px;
     color: white;
+    opacity: 1.0;
+}
+
+a {
+    color: white;
+    
+}
+
+a:hover {
+    color: cornflowerblue;
+    
+}
+
+
+ul .content {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+li .content {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+   
 }

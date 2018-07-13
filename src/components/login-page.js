@@ -11,10 +11,11 @@ export function loginPage(props) {
 
     return (
         <div className="loginPage">
-            <h2>Login</h2>
-            <LoginForm />
-            <Link className="registerLink" to="/register">Register</Link><br></br>
-           
+            <div className="content-container">
+                <h2>Login</h2>
+                <LoginForm />
+            <   Link className="registerLink" to="/register">Register</Link><br></br>
+            </div>
         </div>
     );
 }

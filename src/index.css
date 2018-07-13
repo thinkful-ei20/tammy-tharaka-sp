@@ -7,8 +7,7 @@
 
 
 html, body, div, span, h2, h3, p, h1,
-a, img, b, u, i, ol, ul, li,
-fieldset, form, label,footer, header,
+img, fieldset, form, label,footer, header,
 menu, nav, section, summary {
 	margin: 0;
 	padding: 0;

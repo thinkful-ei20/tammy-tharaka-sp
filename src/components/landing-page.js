@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
 import './landing-page.css';
-import LoginForm from './login-form';
+
 
 export function LandingPage(props) {
     // If we are logged in redirect straight to the user's dashboard
@@ -12,9 +12,13 @@ export function LandingPage(props) {
 
     return (
         <div className="home">
+            <div className="content-container">
             <h2>Learn to retain information better and get woke</h2>
-           
-            <Link to="/register">Register</Link>
+            <ul className="content">
+                <li className="content"><Link to="/login">Login</Link></li>
+                <li className="content"><Link to="/register">Register</Link></li>
+            </ul>
+            </div>
         </div>
     );
 }
@@ -26,4 +30,3 @@ const mapStateToProps = state => ({
 export default connect(mapStateToProps)(LandingPage);
 
 
-//<LoginForm />
