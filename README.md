@@ -1,13 +1,13 @@
 # Cards to Get Woke.
 Deployed here: [Get Woke](https://shielded-inlet-36595.herokuapp.com/)
 
-Revisit America's unsung heros through a deck of cards.
+Revisit America's unsung heroes through a deck of cards.
 
-This is stuff you won't find in history books, the forgotten struggles and unifiying strength brought to America by minorities, immigrants, and their supporters. 
+This is stuff you won't find in history books, the forgotten struggles and unifying strength brought to America by minorities, immigrants, and their supporters.
 
 Get woke.
 
-This app uses an alorithm to emulate [spaced repetition](https://www.theguardian.com/education/2016/jan/23/spaced-repetition-a-hack-to-make-your-brain-store-information). 
+This app uses an algorithm to emulate [spaced repetition](https://www.theguardian.com/education/2016/jan/23/spaced-repetition-a-hack-to-make-your-brain-store-information). 
 
 
 ![Following card of Get Woke](https://i.imgur.com/exTBnsW.png "Preview of GetWoke")
@@ -19,7 +19,7 @@ The purpose is to highlight how outsiders continuously shaped American ideals an
 
 # Features
 -Users can create an account
--Users can store where they last ended their study session
+-Users can store where they ended their study session
 -Users can have a customized order of cards based on how well they answer questions
 
 ## To Come
