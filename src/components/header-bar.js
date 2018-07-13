@@ -22,6 +22,7 @@ export class HeaderBar extends React.Component {
             <div className="header-bar">
                 <h1>Cards to get woke</h1>
                 {logOutButton}
+                
             </div>
         );
     }

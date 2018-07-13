@@ -13,7 +13,7 @@ export function LandingPage(props) {
     return (
         <div className="home">
             <h2>Learn to retain information better and get woke</h2>
-            <Link to="/login">Login</Link><br></br>
+           
             <Link to="/register">Register</Link>
         </div>
     );
@@ -24,3 +24,6 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(LandingPage);
+
+
+//<LoginForm />

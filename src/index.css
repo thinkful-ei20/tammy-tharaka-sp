@@ -1,3 +1,21 @@
+/* code reset from 
+  http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+html, body, div, span, h2, h3, p, h1,
+a, img, b, u, i, ol, ul, li,
+fieldset, form, label,footer, header,
+menu, nav, section, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,8 +24,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-align: center;
+  background-color: #000000;
+  background-image: url("background-sr.jpg");
+  color: white;
 }
 
+h1 {
+  font-size: 40x;
+}
+
+h2{
+  font-size: 20px;
+}
 /* html { 
   background: url('background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
