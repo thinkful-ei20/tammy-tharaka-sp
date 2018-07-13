@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
 import './content.css';
+import './login-page.css';
 import LoginForm from './login-form';
 
 export function loginPage(props) {
@@ -11,9 +12,10 @@ export function loginPage(props) {
 
     return (
         <div className="main-content-container">
+    
             <div className="main-content-container2">
                 <div className="content-container">
-                <h2>Login</h2>
+                <h2 className="login">Login</h2>
                 <LoginForm />
                 <Link className="registerLink" to="/register">Register</Link><br></br>
                 </div>

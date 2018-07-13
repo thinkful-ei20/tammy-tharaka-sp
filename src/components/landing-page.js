@@ -20,7 +20,7 @@ export function LandingPage(props) {
                     by minorities, immigrants, and their supporters. 
                     Revisit America's unsung heros through a deck of cards. 
                     </div>
-                <h2>Get woke.</h2>
+                <h3>Get woke.</h3>
                 <ul className="content">
                     <li className="content"><Link to="/login">Login</Link></li>
                     <li className="content"><Link to="/register">Register</Link></li>

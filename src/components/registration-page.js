@@ -11,11 +11,14 @@ export function RegistrationPage(props) {
         return <Redirect to="/dashboard" />;
     }
     return (
-        <div className="home">
-            <h2>Register</h2>
-            <RegistrationForm />
-            <Link to="/login">Login</Link><br></br>
-            <Link to="/">LandingPage</Link>
+        <div className="main-content-container">
+            <div className="main-content-container2">
+                <div className="content-container">
+                    <h2>Register</h2>
+                    <RegistrationForm />
+                    <Link to="/login">Login</Link><br></br>
+                </div>
+            </div>
         </div>
     );
 }
