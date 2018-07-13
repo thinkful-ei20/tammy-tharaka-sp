@@ -47,12 +47,12 @@ Standard/Thinkful-style
 
 <b>Built with</b>
 - [Express](https://expressjs.com/)
--[Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org/)
 - [Mocha](https://mochajs.org/)
 - [Chai](http://www.chaijs.com/)
 - [Enzyme](https://airbnb.io/enzyme/docs/api/)
-- [Travis](https://travis-ci.org)
+
 
 ## Credits
 Thank you to the Thinkful team for their wonderful support. 
