@@ -5,6 +5,7 @@ import {fetchProtectedData} from '../actions/protected-data';
 import {fetchQuestions, fetchNext} from '../actions/questions';
 import AnswerForm from './answer-form';
 import './dashboard.css';
+import './content.css';
 
 export class Dashboard extends React.Component {
     componentDidMount() {
@@ -16,20 +17,30 @@ export class Dashboard extends React.Component {
         // console.log(this.props)
 
         return (
-            <div className="dashboard">
-                <div className="dashboard-username">
-                   Welcome {this.props.username}
-                </div>
-                <div className="dashboard-questions">
-                    Who is this historical figure?<br></br>
-                    <div className="imgDiv">
-                        <img src={this.props.questions.data}/>
+            <div className="main-content-container">
+                <div className="main-content-container2">
+                    <div className="content-container dashboard">
+                        <ul className="question-card">
+                        <li className="question-card">
+                            <div className="dashboard-questions">
+                                Who is this?
+                            
+                                <div className="imgDiv">
+                                <img src={this.props.questions.data}/>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li className="question-card">
+                            <div className="answer-container">
+                                <AnswerForm />
+                                <span>{this.props.questions.answer}</span><br></br>
+                                <button className="next-button" id="next-card" onClick={() => this.props.dispatch(fetchNext())}>Next</button>
+                            </div>
+                        </li>
+                        </ul>  
                     </div>
-                    
                 </div>
-                <AnswerForm />
-                <span>{this.props.questions.answer}</span><br></br>
-                <button onClick={() => this.props.dispatch(fetchNext())}>Next</button>
             </div>
         );
     }
@@ -43,8 +54,15 @@ const mapStateToProps = state => {
         name: `${currentUser.firstName} ${currentUser.lastName}`,
         protectedData: state.protectedData.data,
         questions: state.questions,
-        // answer: state.questions.answer
+        answer: state.questions.answer
     };
 };
 
 export default requiresLogin()(connect(mapStateToProps)(Dashboard));
+
+
+//customization
+
+// <div className="dashboard-username">
+// Hey {this.props.username}!
+// </div>

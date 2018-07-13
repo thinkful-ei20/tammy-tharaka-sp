@@ -13,7 +13,7 @@
     padding-left: 25px;
     padding-right: 25px;
     width: 600px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, .85);
 }
 
 .content-container{
@@ -23,12 +23,6 @@
 
 p{
     color:white;
-}
-
-h3 {
-    padding-top: 25px;
-    color: white;
-    opacity: 1.0;
 }
 
 a {

@@ -6,3 +6,45 @@
     max-width: 100%;
     max-height: 100%;
 }
+
+ul .question-card {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+li .question-card {
+    float: left;
+}
+
+.next-button{
+    width: 75px;
+    border:black;
+    border-radius: 5px;
+    padding: 10px;
+    color:white;
+    background-color: blue;
+}
+
+.answer-button{
+    width: 75px;
+    border: black;
+    padding: 10px;
+    color:white;
+    border-radius: 5px;
+    background-color: red;
+}
+/* .content-container .dashboard{
+    display: inline-flex;
+}
+.dashboard-questions{
+    width:55%;
+    margin-right:2%;
+    
+}
+
+.answer-container{
+    width:42%;
+} */

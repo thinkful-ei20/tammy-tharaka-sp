@@ -28,7 +28,7 @@ export class AnswerForm extends React.Component {
             );
         }
         return (
-            <div className="answerFormContainer">
+            <div id="answer-form" className="answerFormContainer">
                 <h3>Enter your answer</h3>
                 <form
                     className="answer-form"
@@ -47,7 +47,7 @@ export class AnswerForm extends React.Component {
                         validate={[required, nonEmpty]}
                     />
           
-                    <button className="answerPostButton" disabled={this.props.pristine || this.props.submitting}>
+                    <button role="button" id="answer-button" className="answer-button" disabled={this.props.pristine || this.props.submitting}>
                         Submit
                     </button>
                 </form>
