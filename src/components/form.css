@@ -2,7 +2,7 @@
 	padding-top: 20px;
 	color: white;
 	width: 50%;
-  padding-bottom: 20px;
+  	padding-bottom: 20px;
 	/* align-items: center; Try changing this to center if you like it better! */
 }
 .form-input .input{
@@ -17,12 +17,12 @@
 
 input{
 		border: none;
-    border-bottom: 1px solid #888;
+    	border-bottom: 1px solid #888;
 		background-color: transparent;
 		margin-top: 20px;
 		margin-bottom: 20px;
 		color: white;
-		height: 15px;
+		height: 20px;
 		font-family: 'Roboto Mono', monospace;
 		font-size: 20px;
 }
