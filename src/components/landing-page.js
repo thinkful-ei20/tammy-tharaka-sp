@@ -15,10 +15,10 @@ export function LandingPage(props) {
             <div className="main-content-container2">
                 <div className="content-container">
                     <div className="text-box">
+                    Revisit America's unsung heroes through a deck of cards.
                     This is stuff you won't find in history books, 
-                    the forgotten struggles and unifiying strength brought to America 
-                    by minorities, immigrants, and their supporters. 
-                    Revisit America's unsung heros through a deck of cards. 
+                    the forgotten struggles and unifying strength brought to America by minorities, immigrants, and their supporters.
+ 
                     </div>
                 <b>Get woke.</b>
                 <ul className="content">
