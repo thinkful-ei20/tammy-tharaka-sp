@@ -33,8 +33,8 @@ export class Dashboard extends React.Component {
 
                         <li className="question-card">
                             <div className="answer-container">
-                                <AnswerForm />
-                                <span>{this.props.questions.answer}</span><br></br>
+                                {this.props.questions.answer ? '' : <AnswerForm />}
+                                <span className="anserMessage">{this.props.questions.answer}</span><br></br>
                                 <button className="next-button" id="next-card" onClick={() => this.props.dispatch(fetchNext())}>Next</button>
                             </div>
                         </li>
